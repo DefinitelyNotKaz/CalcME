@@ -1,23 +1,24 @@
-
 import React, { Component } from "react";
- 
+import Container from "react-bootstrap/Container"
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
+
+
 class Harem extends Component {
   render() {
     return (
-      <div>
-        <h2>STUFF</h2>
-        <p>Mauris sem velit, vehicula eget sodales vitae,
-        rhoncus eget sapien:</p>
-        <ol>
-          <li>Nulla pulvinar diam</li>
-          <li>Facilisis bibendum</li>
-          <li>Vestibulum vulputate</li>
-          <li>Eget erat</li>
-          <li>Id porttitor</li>
-        </ol>
-      </div>
+      <Container>
+        <Row>
+          <Col></Col>
+          <Col className="temp">
+            <img src="./assets/sob.png" alt=""></img>
+            <h2> Nothing to see here yet</h2>
+          </Col>
+          <Col></Col>
+        </Row>
+      </Container>
     );
   }
 }
- 
+
 export default Harem;

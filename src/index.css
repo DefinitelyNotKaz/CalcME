@@ -54,7 +54,7 @@ ul.header li a {
   border-radius: 20em;
 }
 
-.itemCol {
+.itemCol, .temp {
   display: flex;
   flex-direction: column;
   align-items: center;
