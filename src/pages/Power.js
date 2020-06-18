@@ -75,116 +75,116 @@ class Power extends Component {
               <Row>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/random100.png" />
-                  <input className="bubble" id="random100" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['random100']} />
+                  <input className="bubble" id="random100" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.random[100]} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/random400.png" />
-                  <input className="bubble" id="random400" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['random400']} />
+                  <input className="bubble" id="random400" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.random[400]} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/random1000.png" />
-                  <input className="bubble" id="random1000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['random1000']} />
+                  <input className="bubble" id="random1000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.random[1000]} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/random5000.png" />
-                  <input className="bubble" id="random5000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['random5000']} />
+                  <input className="bubble" id="random5000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.random[5000]} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/random10000.png" />
-                  <input className="bubble" id="random10000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['random10000']} />
+                  <input className="bubble" id="random10000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.random[10000]} />
                 </Col>
               </Row>
               <Row>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/commerce100.png" />
-                  <input className="bubble" id="commerce100" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['commerce100']} />
+                  <input className="bubble" id="commerce100" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.commerce[100]} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/commerce400.png" />
-                  <input className="bubble" id="commerce400" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['commerce400']} />
+                  <input className="bubble" id="commerce400" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.commerce[400]} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/commerce1000.png" />
-                  <input className="bubble" id="commerce1000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['commerce1000']} />
+                  <input className="bubble" id="commerce1000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.commerce[1000]} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/commerce5000.png" />
-                  <input className="bubble" id="commerce5000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['commerce5000']} />
+                  <input className="bubble" id="commerce5000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.commerce[5000]} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/commerce10000.png" />
-                  <input className="bubble" id="commerce10000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['commerce10000']} />
+                  <input className="bubble" id="commerce10000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.commerce[10000]} />
                 </Col>
               </Row>
               <Row>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/agriculture100.png" />
-                  <input className="bubble" id="agriculture100" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['agriculture100']} />
+                  <input className="bubble" id="agriculture100" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.agriculture[100]} />
 
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/agriculture400.png" />
-                  <input className="bubble" id="agriculture400" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['agriculture400']} />
+                  <input className="bubble" id="agriculture400" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.agriculture[400]} />
 
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/agriculture1000.png" />
-                  <input className="bubble" id="agriculture1000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['agriculture1000']} />
+                  <input className="bubble" id="agriculture1000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.agriculture[1000]} />
 
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/agriculture5000.png" />
-                  <input className="bubble" id="agriculture5000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['agriculture5000']} />
+                  <input className="bubble" id="agriculture5000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.agriculture[5000]} />
 
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/agriculture10000.png" />
-                  <input className="bubble" id="agriculture10000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['agriculture10000']} />
+                  <input className="bubble" id="agriculture10000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.agriculture[10000]} />
 
                 </Col>
               </Row>
               <Row>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/politics100.png" />
-                  <input className="bubble" id="politics100" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['politics100']} />
+                  <input className="bubble" id="politics100" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.politics[100]} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/politics400.png" />
-                  <input className="bubble" id="politics400" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['politics400']} />
+                  <input className="bubble" id="politics400" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.politics[400]} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/politics1000.png" />
-                  <input className="bubble" id="politics1000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['politics1000']} />
+                  <input className="bubble" id="politics1000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.politics[1000]} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/politics5000.png" />
-                  <input className="bubble" id="politics5000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['politics5000']} />
+                  <input className="bubble" id="politics5000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.politics[5000]} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/politics10000.png" />
-                  <input className="bubble" id="politics10000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['politics10000']} />
+                  <input className="bubble" id="politics10000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.politics[10000]} />
                 </Col>
               </Row>
               <Row>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/military100.png" />
-                  <input className="bubble" id="military100" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['military100']} />
+                  <input className="bubble" id="military100" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.military[100]} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/military400.png" />
-                  <input className="bubble" id="military400" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['military400']} />
+                  <input className="bubble" id="military400" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.military[400]} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/military1000.png" />
-                  <input className="bubble" id="military1000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['military1000']} />
+                  <input className="bubble" id="military1000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.military[1000]} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/military5000.png" />
-                  <input className="bubble" id="military5000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['military5000']} />
+                  <input className="bubble" id="military5000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.military[5000]} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/power/military10000.png" />
-                  <input className="bubble" id="military10000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state['military10000']} />
+                  <input className="bubble" id="military10000" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.military[10000]} />
                 </Col>
               </Row>
             </Container>
