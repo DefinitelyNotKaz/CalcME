@@ -42,7 +42,7 @@ ul.header li a {
   width: 5vw; 
 }
 
-.form-control {
+.bubble {
   position: relative;
   top: -1.5em;
   background-color: #000000a1;

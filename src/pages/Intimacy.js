@@ -42,19 +42,19 @@ class Intimacy extends Component {
               <Row>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/intimacy/silver.png" />
-                  <input className="form-control" id="silver" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.silver} />
+                  <input className="bubble" id="silver" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.silver} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/intimacy/gold.png" />
-                  <input className="form-control" id="gold" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.gold} />
+                  <input className="bubble" id="gold" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.gold} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/intimacy/jade.png" />
-                  <input className="form-control" id="jade" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.jade} />
+                  <input className="bubble" id="jade" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.jade} />
                 </Col>
                 <Col className="itemCol">
                   <img alt="" className="game-icon" src="./assets/intimacy/crown.png" />
-                  <input className="form-control" id="crown" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.crown} />
+                  <input className="bubble" id="crown" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.crown} />
                 </Col>
               </Row>
             </Container>
