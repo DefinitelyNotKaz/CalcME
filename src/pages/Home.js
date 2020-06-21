@@ -10,8 +10,8 @@ class Home extends Component {
         <Row>
           <Col></Col>
           <Col className="temp">
-            <img src="./assets/sob.png" alt=""></img>
-            <h2> Nothing to see here yet</h2>
+            <img src="./assets/hi.png" alt=""></img>
+            <center><h2>Not sure what to add here yet :3</h2></center>
           </Col>
           <Col></Col>
         </Row>

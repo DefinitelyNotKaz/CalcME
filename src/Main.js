@@ -10,21 +10,21 @@ import Power from "./pages/Power";
 import Intimacy from "./pages/Intimacy";
 import Harem from "./pages/Harem";
 import Tokens from "./pages/Tokens";
-import Appointment from "./pages/Appointment";
+// import Appointment from "./pages/Appointment";
 
 class Main extends Component {
     render() {
       return (
         <HashRouter>
           <div>
-            <h1>CalcME</h1>
+            <a href="/"><img className="logo" alt="" src="./logo.png"></img></a>
             <ul className="header">
               <li><NavLink to="/">Home</NavLink></li>
               <li><NavLink to="/power">Power Increase</NavLink></li>
               <li><NavLink to="/intimacy">Intimacy Increase</NavLink></li>
               <li><NavLink to="/harem">Harem Exp</NavLink></li>
               <li><NavLink to="/tokens">Tokens</NavLink></li>
-              <li><NavLink to="/appointment">Appointment Items</NavLink></li>
+              {/* <li><NavLink to="/appointment">Appointment Items</NavLink></li> */}
             </ul>
             <div className="content">
             <Route exact path="/" component={Home}/>
@@ -32,7 +32,7 @@ class Main extends Component {
               <Route path="/intimacy" component={Intimacy}/>
               <Route path="/harem" component={Harem}/>
               <Route path="/tokens" component={Tokens}/>
-              <Route path="/appointment" component={Appointment}/>
+              {/* <Route path="/appointment" component={Appointment}/> */}
             </div>
           </div>
         </HashRouter>

@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import InputGroup from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
+import Table from "react-bootstrap/Table"
 
 class Tokens extends Component {
   constructor(props) {
@@ -72,11 +73,16 @@ class Tokens extends Component {
     console.log(this.state)
   }
 
+  format(num) {
+    return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+  }
+
   render() {
     return (
       <Container>
         <Row>
-          <Col>
+          <Col md={12} lg={4}>
+            <h2>User stats</h2>
             <InputGroup className="mb-3">
               <InputGroup.Prepend>
                 <InputGroup.Text id="inputGroup-sizing-default">Commerce</InputGroup.Text>
@@ -104,48 +110,49 @@ class Tokens extends Component {
               />
             </InputGroup>
           </Col>
-          <Col>
+          <Col md={12} lg={8}>
+            <h2>Treasury</h2>
             <Container>
               <Row>
-                <Col className="itemCol">
+                <Col xs={4} sm className="itemCol">
                   <img alt="" className="game-icon" src="./assets/tokens/taxr1.png" />
                   <input className="bubble" id="taxr1" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.tax.r1} />
                 </Col>
-                <Col className="itemCol">
+                <Col xs={4} sm className="itemCol">
                   <img alt="" className="game-icon" src="./assets/tokens/taxr2.png" />
                   <input className="bubble" id="taxr2" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.tax.r2} />
                 </Col>
-                <Col className="itemCol">
+                <Col xs={4} sm className="itemCol">
                   <img alt="" className="game-icon" src="./assets/tokens/taxr3.png" />
                   <input className="bubble" id="taxr3" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.tax.r3} />
                 </Col>
-                <Col className="itemCol">
+                <Col xs={4} sm className="itemCol">
                   <img alt="" className="game-icon" src="./assets/tokens/taxr4.png" />
                   <input className="bubble" id="taxr4" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.tax.r4} />
                 </Col>
-                <Col className="itemCol">
+                <Col xs={4} sm className="itemCol">
                   <img alt="" className="game-icon" src="./assets/tokens/taxr5.png" />
                   <input className="bubble" id="taxr5" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.tax.r5} />
                 </Col>
               </Row>
               <Row>
-                <Col className="itemCol">
+                <Col xs={4} sm className="itemCol">
                   <img alt="" className="game-icon" src="./assets/tokens/troopr1.png" />
                   <input className="bubble" id="troopr1" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.troop.r1} />
                 </Col>
-                <Col className="itemCol">
+                <Col xs={4} sm className="itemCol">
                   <img alt="" className="game-icon" src="./assets/tokens/troopr2.png" />
                   <input className="bubble" id="troopr2" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.troop.r2} />
                 </Col>
-                <Col className="itemCol">
+                <Col xs={4} sm className="itemCol">
                   <img alt="" className="game-icon" src="./assets/tokens/troopr3.png" />
                   <input className="bubble" id="troopr3" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.troop.r3} />
                 </Col>
-                <Col className="itemCol">
+                <Col xs={4} sm className="itemCol">
                   <img alt="" className="game-icon" src="./assets/tokens/troopr4.png" />
                   <input className="bubble" id="troopr4" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.troop.r4} />
                 </Col>
-                <Col className="itemCol">
+                <Col xs={4} sm className="itemCol">
                   <img alt="" className="game-icon" src="./assets/tokens/troopr5.png" />
                   <input className="bubble" id="troopr5" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.troop.r5} />
                 </Col>
@@ -155,21 +162,67 @@ class Tokens extends Component {
           <Col>
             <Container>
               <Row>
-                <Col>
-                  <h1>Total taels: {this.state.typeTotal('tax', 'commerce')}</h1>
-                  <h3>R1: {this.state.tokenTotal('tax', 'r1', 'commerce')}</h3>
-                  <h3>R2: {this.state.tokenTotal('tax', 'r2', 'commerce')}</h3>
-                  <h3>R3: {this.state.tokenTotal('tax', 'r3', 'commerce')}</h3>
-                  <h3>R4: {this.state.tokenTotal('tax', 'r4', 'commerce')}</h3>
-                  <h3>R5: {this.state.tokenTotal('tax', 'r5', 'commerce')}</h3>
+                <Col sm={12} md>
+                  <h2>Tael increase</h2>
+                  <Table responsive>
+                    <tbody>
+                      <tr>
+                        <td><b>Total</b></td>
+                        <td><b>{this.format(this.state.typeTotal('tax', 'commerce'))}</b></td>
+                      </tr>
+                      <tr>
+                        <td>R1</td>
+                        <td>{this.format(this.state.tokenTotal('tax', 'r1', 'commerce'))}</td>
+                      </tr>
+                      <tr>
+                        <td>R2</td>
+                        <td>{this.format(this.state.tokenTotal('tax', 'r2', 'commerce'))}</td>
+                      </tr>
+                      <tr>
+                        <td>R3</td>
+                        <td>{this.format(this.state.tokenTotal('tax', 'r3', 'commerce'))}</td>
+                      </tr>
+                      <tr>
+                        <td>R4</td>
+                        <td>{this.format(this.state.tokenTotal('tax', 'r4', 'commerce'))}</td>
+                      </tr>
+                      <tr>
+                        <td>R5</td>
+                        <td>{this.format(this.state.tokenTotal('tax', 'r5', 'commerce'))}</td>
+                      </tr>
+                    </tbody>
+                  </Table>
                 </Col>
-                <Col>
-                  <h1>Total troops: {this.state.typeTotal('troop', 'politics')}</h1>
-                  <h3>R1: {this.state.tokenTotal('troop', 'r1', 'politics')}</h3>
-                  <h3>R2: {this.state.tokenTotal('troop', 'r2', 'politics')}</h3>
-                  <h3>R3: {this.state.tokenTotal('troop', 'r3', 'politics')}</h3>
-                  <h3>R4: {this.state.tokenTotal('troop', 'r4', 'politics')}</h3>
-                  <h3>R5: {this.state.tokenTotal('troop', 'r5', 'politics')}</h3>
+                <Col sm={12} md>
+                  <h2>Troop increase</h2>
+                  <Table responsive>
+                    <tbody>
+                      <tr>
+                        <td><b>Total</b></td>
+                        <td><b>{this.format(this.state.typeTotal('troop', 'politics'))}</b></td>
+                      </tr>
+                      <tr>
+                        <td>R1</td>
+                        <td>{this.format(this.state.tokenTotal('troop', 'r1', 'politics'))}</td>
+                      </tr>
+                      <tr>
+                        <td>R2</td>
+                        <td>{this.format(this.state.tokenTotal('troop', 'r2', 'politics'))}</td>
+                      </tr>
+                      <tr>
+                        <td>R3</td>
+                        <td>{this.format(this.state.tokenTotal('troop', 'r3', 'politics'))}</td>
+                      </tr>
+                      <tr>
+                        <td>R4</td>
+                        <td>{this.format(this.state.tokenTotal('troop', 'r4', 'politics'))}</td>
+                      </tr>
+                      <tr>
+                        <td>R5</td>
+                        <td>{this.format(this.state.tokenTotal('troop', 'r5', 'politics'))}</td>
+                      </tr>
+                    </tbody>
+                  </Table>
                 </Col>
               </Row>
             </Container>

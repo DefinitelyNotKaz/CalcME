@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
+import Table from "react-bootstrap/Table"
 
 class Intimacy extends Component {
   constructor(props) {
@@ -32,45 +33,64 @@ class Intimacy extends Component {
     this.setState(newstate);
   }
 
+  format(num) {
+    return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+  }
+
   render() {
     return (
       <Container>
         <Row>
-          <Col></Col>
-          <Col className="itemCol">
+          <Col sm={12} md={6} lg={6}>
+            <h2>Treasury</h2>
             <Container>
               <Row>
-                <Col className="itemCol">
+                <Col className="itemCol" xs={6} sm>
                   <img alt="" className="game-icon" src="./assets/intimacy/silver.png" />
                   <input className="bubble" id="silver" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.silver} />
                 </Col>
-                <Col className="itemCol">
+                <Col className="itemCol" xs={6} sm>
                   <img alt="" className="game-icon" src="./assets/intimacy/gold.png" />
                   <input className="bubble" id="gold" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.gold} />
                 </Col>
-                <Col className="itemCol">
+                <Col className="itemCol" xs={6} sm>
                   <img alt="" className="game-icon" src="./assets/intimacy/jade.png" />
                   <input className="bubble" id="jade" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.jade} />
                 </Col>
-                <Col className="itemCol">
+                <Col className="itemCol" xs={6} sm>
                   <img alt="" className="game-icon" src="./assets/intimacy/crown.png" />
                   <input className="bubble" id="crown" type="text" pattern="[0-9]*" onChange={this.handleChange.bind(this)} value={this.state.crown} />
                 </Col>
               </Row>
             </Container>
           </Col>
-          <Col></Col>
-        </Row>
-        <Row>
-          <Col></Col>
           <Col>
-            <h1 className="centeredText">Total: {this.state.total()}</h1>
-            <h3 className="centeredText">Silver: {this.state.typeTotal('silver')}</h3>
-            <h3 className="centeredText">Gold: {this.state.typeTotal('gold')}</h3>
-            <h3 className="centeredText">Jade: {this.state.typeTotal('jade')}</h3>
-            <h3 className="centeredText">Crown: {this.state.typeTotal('crown')}</h3>
+            <h2>Intimacy increase</h2>
+            <Table responsive>
+              <tbody>
+                <tr>
+                  <td><b>Total</b></td>
+                  <td><b>{this.format(this.state.total())}</b></td>
+                </tr>
+                <tr>
+                  <td>Silver</td>
+                  <td>{this.format(this.state.typeTotal('silver'))}</td>
+                </tr>
+                <tr>
+                  <td>Gold</td>
+                  <td>{this.format(this.state.typeTotal('gold'))}</td>
+                </tr>
+                <tr>
+                  <td>Jade</td>
+                  <td>{this.format(this.state.typeTotal('jade'))}</td>
+                </tr>
+                <tr>
+                  <td>Crown</td>
+                  <td>{this.format(this.state.typeTotal('crown'))}</td>
+                </tr>
+              </tbody>
+            </Table>
           </Col>
-          <Col></Col>
         </Row>
       </Container>
     );

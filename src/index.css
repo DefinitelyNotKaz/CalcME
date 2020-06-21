@@ -39,7 +39,8 @@ ul.header li a {
 }
 
 .game-icon {
-  width: 5vw; 
+  width: 10vh; 
+  min-width: 75%;
 }
 
 .bubble {
@@ -62,4 +63,8 @@ ul.header li a {
 
 .centeredText {
   text-align: center !important;
+}
+
+.logo {
+  width: 15em;
 }
