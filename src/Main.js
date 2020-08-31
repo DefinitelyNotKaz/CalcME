@@ -10,6 +10,7 @@ import Power from "./pages/Power";
 import Intimacy from "./pages/Intimacy";
 import Harem from "./pages/Harem";
 import Tokens from "./pages/Tokens";
+import Savvy from "./pages/Savvy";
 // import Appointment from "./pages/Appointment";
 
 class Main extends Component {
@@ -22,6 +23,7 @@ class Main extends Component {
               <li><NavLink to="/">Home</NavLink></li>
               <li><NavLink to="/power">Power Increase</NavLink></li>
               <li><NavLink to="/intimacy">Intimacy Increase</NavLink></li>
+              <li><NavLink to="/savvy">Savvy Increase</NavLink></li>
               <li><NavLink to="/harem">Harem Exp</NavLink></li>
               <li><NavLink to="/tokens">Tokens</NavLink></li>
               {/* <li><NavLink to="/appointment">Appointment Items</NavLink></li> */}
@@ -30,6 +32,7 @@ class Main extends Component {
             <Route exact path="/" component={Home}/>
               <Route path="/power" component={Power}/>
               <Route path="/intimacy" component={Intimacy}/>
+              <Route path="/savvy" component={Savvy}/>
               <Route path="/harem" component={Harem}/>
               <Route path="/tokens" component={Tokens}/>
               {/* <Route path="/appointment" component={Appointment}/> */}
