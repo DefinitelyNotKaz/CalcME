@@ -59,7 +59,7 @@ class Intimacy extends Component {
             </Container>
           </Col>
           <Col>
-            <h2>Intimacy increase</h2>
+            <h2>Savvy increase</h2>
             <Table responsive>
               <tbody>
                 <tr>
